@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Viatge a Dubai</title>
+    <meta name="author" content="Arnau Pérez">
+    <meta name="keyword" content="dubai, viatge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-page"> <!-- Valor afegit al CSS (apartat menu navegació) -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="./index.html" class="enlace">
+            <h1 class="titulo">VIATGE A DUBAI</h1>
+        </a>
+        <ul>
+            <li class="li"><a class="active a" href="./index.html">Inici</a></li>
+            <li class="li"><a class="a" href="./content1.html">Allotjament</a></li>
+            <li class="li"><a class="a" href="./content2.html">Activitats</a></li>
+            <li class="li"><a class="a" href="./contact.html">Contacte</a></li>
+            <li class="li"><a class="a" href="./formulari.html">Reservar</a></li>
+            <li class="li"><a class="open-modal-button a" href="#login">Accedir</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <form action="#close">
+                <input type="text" placeholder="Usuari" required><br>
+                <input type="password" placeholder="Contrasenya" maxlength="8" required><br>
+                <a href="#"><input type="submit" value="Entrar" class="submit"></a>
+            </form>
+        </div>
+    </div>
+
+    <div class="vacio-superior"></div>
+
+    <div class="t">
+        <img class="a-3 imgs" src="./imatges/dubai_background.avif" alt="Imatge Dubai">
+        <h2 class="titulo-img a-3">RESERVAR</h2>
+    </div>
+    
+    <section>
+        <h3>Emplena el següent formulari per tal de fer la reserva al teu gust</h3>
+        <article>
+            <br><br>
+            <form action="helloworld.php" method="post">
+                <fieldset>
+                    <h5>Dades personals</h5>
+                    <label>Nom i cognoms:</label><br>
+                    <input class="form-input" type="text" placeholder="Nom" required>
+                    <input class="form-input" type="text" placeholder="Primer cognom" required>
+                    <input class="form-input input-final" type="text" placeholder="Segon cognom" required>
+                    <br><br>
+                    <label>Correu electrònic</label><br>
+                    <input class="form-input-email" type="email" placeholder="usuari@gmail.com" required>
+                    <br><br>
+                    <div class="flex">
+                        <div>
+                            <label>Data de naixement:</label><br>
+                            <input class="form-input-2" type="date" required>
+                        </div>
+                        <div class="div-form">
+                            <label>Telèfon:</label><br>
+                            <input class="form-input-2" type="tel" maxlength="9" placeholder="932 17 42 14" required>
+                        </div>
+                    </div>
+                    <br>
+                    <label>Temes d'interès</label>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h5>Selecciona l'allotjament que vols</h5>
+                    <div class="alo-reserva flex">
+                        <input class="radio-r" type="radio" name="hotel" required>
+                        <img class="img-hotels img-reserva" src="./imatges/burj-al-arab.webp" alt="Burj Khalifa">
+                        <div class="res-content">
+                            <h4 class="a3">Burj Al Arab</h4>
+                        </div>
+                    </div>
+                    <div class="alo-reserva flex">
+                        <input class="radio-r" type="radio" name="hotel">
+                        <img class="img-hotels img-reserva" src="./imatges/atlantis-hotel.jpg" alt="Burj Khalifa">
+                        <div class="res-content">
+                            <h4 class="a3">Atlantis The Palm</h4>
+                        </div>
+                    </div>
+                    <div class="alo-reserva flex">
+                        <input class="radio-r" type="radio" name="hotel">
+                        <img class="img-hotels img-reserva" src="./imatges/armani-hotel.jpg" alt="Burj Khalifa">
+                        <div class="res-content">
+                            <h4 class="a3">Armani Hotel Dubai</h4>
+                        </div>
+                    </div>
+                    <div class="alo-reserva flex">
+                        <input class="radio-r" type="radio" name="hotel">
+                        <img class="img-hotels img-reserva" src="./imatges/adolf-hotel.jpg" alt="Burj Khalifa">
+                        <div class="res-content">
+                            <h4 class="a3">Aloft Palm Jumeirah</h4>
+                        </div>
+                    </div>
+                    <div class="alo-reserva flex">
+                        <input class="radio-r" type="radio" name="hotel">
+                        <img class="img-hotels img-reserva" src="./imatges/movenpick-hotel.webp" alt="Burj Khalifa">
+                        <div class="res-content">
+                            <h4 class="a3">Mövenpick JBR</h4>
+                        </div>
+                    </div>
+                    <div class="alo-reserva flex">
+                        <input class="radio-r" type="radio" name="hotel">
+                        <img class="img-hotels img-reserva" src="./imatges/zabeel-hotel.jpg" alt="Burj Khalifa">
+                        <div class="res-content">
+                            <h4 class="a3">Zabeel House</h4>
+                        </div>
+                    </div>
+                    <div class="alo-reserva flex">
+                        <input class="radio-r" type="radio" name="hotel">
+                        <img class="img-hotels img-reserva" src="./imatges/radisson-blu-hotel.jpg" alt="Burj Khalifa">
+                        <div class="res-content">
+                            <h4 class="a3">Radisson Blu</h4>
+                        </div>
+                    </div>
+                    <div class="alo-reserva flex">
+                        <input class="radio-r" type="radio" name="hotel">
+                        <img class="img-hotels img-reserva" src="./imatges/vida-downtown-hotel.jpg" alt="Burj Khalifa">
+                        <div class="res-content">
+                            <h4 class="a3">Vida Downtown</h4>
+                        </div>
+                    </div>
+                    <div class="alo-reserva alo-final flex">
+                        <input class="radio-r" type="radio" name="hotel">
+                        <img class="img-hotels img-reserva" src="./imatges/rove-downtown-hotel.avif" alt="Burj Khalifa">
+                        <div class="res-content">
+                            <h4 class="a3">Rove Downtown</h4>
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h5>Observacions</h5>
+                    <textarea maxlength="50" placeholder="Escriu aqui els teus dubtes, preguntes, ..."></textarea>
+                </fieldset>
+                <input type="submit" class="submit-hotel submit">
+                <input type="reset" value="Esborrar" class="submit-hotel submit reset">
+            </form>
+        </article>
+    </section>
+    
+    <footer>
+        <a href="./contact.html"><p id="final">Arnau Pérez Marfil - SMX 1A</p></a>
+        <a href="https://agora.xtec.cat/ies-sabadell/" target="_blank"><img id="colegio" src="./imatges/LogoInstitut.png" alt="Logo Institut Sabadell"></a>
+    </footer>
+</body>
+</html>

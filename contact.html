@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Viatge a Dubai</title>
+    <meta name="author" content="Arnau Pérez">
+    <meta name="keyword" content="dubai, viatge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-page"> <!-- Valor afegit al CSS (apartat menu navegació) -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="./index.html" class="enlace">
+            <h1 class="titulo">VIATGE A DUBAI</h1>
+        </a>
+        <ul>
+            <li class="li"><a class="active a" href="./index.html">Inici</a></li>
+            <li class="li"><a class="a" href="./content1.html">Allotjament</a></li>
+            <li class="li"><a class="a" href="./content2.html">Activitats</a></li>
+            <li class="li"><a class="a" href="./contact.html">Contacte</a></li>
+            <li class="li"><a class="a" href="./formulari.html">Reservar</a></li>
+            <li class="li"><a class="open-modal-button a" href="#login">Accedir</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <form action="#close">
+                <input type="text" placeholder="Usuari" required><br>
+                <input type="password" placeholder="Contrasenya" maxlength="8" required><br>
+                <a href="#"><input type="submit" value="Entrar" class="submit"></a>
+            </form>
+        </div>
+    </div>
+
+    <div class="vacio-superior"></div>
+
+    <div class="t">
+        <img class="a-3 imgs" src="./imatges/dubai_background.avif" alt="Imatge Dubai">
+        <h2 class="titulo-img a-3">CONTACTE</h2>
+    </div>
+    
+    <section>
+        <article>
+            <h4>Dades de contacte</h4>
+            <br>
+            <div class="flex">
+                <p class="apartado">Nom del creador de la pàgina web:</p>
+                <p class="info">Arnau Pérez Marfil</p>
+            </div>
+            <br>
+            <div class="flex">
+                <p class="apartado">Correu electrònic:</p>
+                <a href="mailto:e.aperezm@ies-sabadell.cat"><p class="info">e.aperezm@ies-sabadell.cat</p></a>
+            </div>
+            <br>
+            <div class="flex">
+                <p class="apartado">Coneixmements:</p>
+                <p class="info">Python, HTML, CSS; JavaScript, C++</p>
+            </div>
+            <br>
+            <div class="flex">
+                <p class="apartado">Experiència en el àmbit de la programació:</p>
+                <p class="info">4 anys</p>
+            </div>
+        </article>
+        <br><br>
+        <article>
+            <h4>Ubicació de l'Institut Sabadell</h4>
+            <br>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.045284501658!2d2.0851102!3d41.554527799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49492db95997f%3A0x47416dcf6e65b685!2sInstitut%20Sabadell!5e1!3m2!1ses!2ses!4v1733086194069!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+    </section>
+    
+    <footer>
+        <a href="./contact.html"><p id="final">Arnau Pérez Marfil - SMX 1A</p></a>
+        <img id="colegio" src="./imatges/LogoInstitut.png" alt="Logo Institut Sabadell">
+    </footer>
+</body>
+</html>

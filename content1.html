@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Viatge a Dubai</title>
+    <meta name="author" content="Arnau Pérez">
+    <meta name="keyword" content="dubai, viatge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-page"> <!-- Valor afegit al CSS (apartat menu navegació) -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="./index.html" class="enlace">
+            <h1 class="titulo">VIATGE A DUBAI</h1>
+        </a>
+        <ul>
+            <li class="li"><a class="active a" href="./index.html">Inici</a></li>
+            <li class="li"><a class="a" href="./content1.html">Allotjament</a></li>
+            <li class="li"><a class="a" href="./content2.html">Activitats</a></li>
+            <li class="li"><a class="a" href="./contact.html">Contacte</a></li>
+            <li class="li"><a class="a" href="./formulari.html">Reservar</a></li>
+            <li class="li"><a class="open-modal-button a" href="#login">Accedir</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <form action="#close">
+                <input type="text" placeholder="Usuari" required><br>
+                <input type="password" placeholder="Contrasenya" maxlength="8" required><br>
+                <a href="#"><input type="submit" value="Entrar" class="submit"></a>
+            </form>
+        </div>
+    </div>
+
+    <div class="vacio-superior"></div>
+
+    <div class="t">
+        <img class="a-2 imgs" src="./imatges/dubai_background.avif" alt="Imatge Dubai">
+        <h2 class="titulo-img a-2">ALLOTJAMENT</h2>
+    </div>
+    
+    <section>
+        <h3>Troba l'allotjament perfecte per la teva estança a Dubai</h3>
+        <article>
+            <br>
+            <img class="article-img" src="./imatges/hotels.jpg" alt="Edificis Dubai">
+            <p>Dubai us dóna la benvinguda amb una oferta d'allotjaments tan impressionant com la ciutat mateixa. Des de luxosos hotels cinc estrelles amb vistes panoràmiques al Burj Khalifa o al golf Pèrsic, fins a acollidors apartaments al cor de la ciutat, aquí trobaràs l'opció perfecta per al teu estil de viatge i pressupost.
+            <br><br>
+            Busques una experiència exclusiva? Explora ressorts de luxe amb platges privades i spas de classe mundial. Prefereixes alguna cosa cèntrica? Descobreix hotels boutique i moderns apartaments als districtes més vibrants, envoltats de restaurants, botigues i entreteniment. Fins i tot per als que viatgen amb un esperit aventurer, Dubai ofereix opcions úniques com campaments de luxe al desert o allotjaments flotants que combinen comoditat i naturalesa.
+            <br><br>
+            En aquesta secció, us ajudarem a explorar les millors opcions d'allotjament, cadascuna acuradament seleccionada per garantir que la vostra estada a Dubai sigui inoblidable. Troba el lloc ideal per descansar, relaxar-te i gaudir al màxim d'aquesta ciutat de somni.</p>
+        </article>
+        <br><br>
+        <article>
+            <h3>Allotjaments</h3>
+            <br>
+            <div class="hotels-nav">
+                <a class="hotels" href="#hotel1">Burj Al Arab</a><hr>
+                <a class="hotels" href="#hotel2">Atlantis The Palm</a><hr>
+                <a class="hotels" href="#hotel3">Armani Hotel Dubai</a><hr>
+                <a class="hotels" href="#hotel4">Aloft Palm Jumeirah</a><hr>
+                <a class="hotels" href="#hotel5">Mövenpick JBR</a><hr>
+                <a class="hotels" href="#hotel6">Zabeel House</a><hr>
+                <a class="hotels" href="#hotel7">Radisson Blu</a><hr>
+                <a class="hotels" href="#hotel8">Vida Downtown</a><hr>
+                <a class="hotels" href="#hotel9">Rove Downtown</a>
+            </div>
+            
+            <div class="flex hotels-content-left">
+                <div class="hotels-content" id="hotel1">
+                    <img class="img-hotels" src="./imatges/burj-al-arab.webp" alt="Burj Al Arab">
+                    <h4>Burj Al Arab</h4>
+                </div>
+                <div class="hotels-content" id="hotel2">
+                    <img class="img-hotels" src="./imatges/atlantis-hotel.jpg" alt="Atlantis The Palm">
+                    <h4>Atlantis The Palm</h4>
+                </div>
+                <div class="hotels-content" id="hotel3">
+                    <img class="img-hotels" src="./imatges/armani-hotel.jpg" alt="Armani Hotel Dubai">
+                    <h4>Armani Hotel Dubai</h4>
+                </div>
+            </div>
+            <br>
+            <div class="flex hotels-content-left">
+                <div class="hotels-content" id="hotel4">
+                    <img class="img-hotels" src="./imatges/adolf-hotel.jpg" alt="Aloft Palm Jumeirah">
+                    <h4>Aloft Palm Jumeirah</h4>
+                </div>
+                <div class="hotels-content" id="hotel5">
+                    <img class="img-hotels" src="./imatges/movenpick-hotel.webp" alt="Mövenpick JBR">
+                    <h4>Mövenpick JBR</h4>
+                </div>
+                <div class="hotels-content" id="hotel6">
+                    <img class="img-hotels" src="./imatges/zabeel-hotel.jpg" alt="Zabeel House">
+                    <h4>Zabeel House</h4>
+                </div>
+            </div>
+            <br>
+            <div class="flex hotels-content-left">
+                <div class="hotels-content" id="hotel7">
+                    <img class="img-hotels" src="./imatges/radisson-blu-hotel.jpg" alt="Radisson Blu">
+                    <h4>Radisson Blu</h4>
+                </div>
+                <div class="hotels-content" id="hotel8">
+                    <img class="img-hotels" src="./imatges/vida-downtown-hotel.jpg" alt="Vida Downtown">
+                    <h4>Vida Downtown</h4>
+                </div>
+                <div class="hotels-content" id="hotel9">
+                    <img class="img-hotels" src="./imatges/rove-downtown-hotel.avif" alt="Rove Downtown">
+                    <h4>Rove Downtown</h4>
+                </div>
+            </div>
+        </article>
+        <br><br><br>
+        <article>
+            <h3>No trobes un allotjament al teu gust?</h3>
+            <br>
+            <form class="form">
+                <textarea class="textarea" placeholder="Escriu aqui el teu allotjament sugerit i tractarem d'incorporar-lo lo abans possible..." required></textarea>
+                <input class="submit submit-hotel" type="submit" value="Enviar sugeriments">
+            </form>
+        </article>
+    </section>
+    
+    <footer>
+        <a href="./contact.html"><p id="final">Arnau Pérez Marfil - SMX 1A</p></a>
+        <img id="colegio" src="./imatges/LogoInstitut.png" alt="Logo Institut Sabadell">
+    </footer>
+</body>
+</html>

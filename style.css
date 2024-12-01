@@ -1,0 +1,423 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Calibri;
+}
+body{
+    overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------------------------------------------------- Menu navegació ---------------------------------------------------------------------------------------------------------*/
+a{
+    text-decoration: none;
+}
+.nav-page{
+    position: fixed;
+    z-index: 1;
+}
+.vacio-superior{
+    height: 81px;
+}
+.flex{
+    display: flex;
+}
+nav{
+    background: #000;
+    height: 81px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 15px;
+}
+.titulo{
+    color: #fff;
+    font-size: 40px;
+}
+li{
+    margin-right: 10px;
+}
+nav ul{
+    float: right;
+    margin-left: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li .a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.li a:hover{
+    color: #f00;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding: 100px 20px 20px 20px;
+    z-index: 1000;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 230px;
+    max-width: 500px;
+    position: relative;
+}
+.modal:target{
+    display: flex;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    background-color: #0001;
+    border: 0;
+}
+input:hover{
+    background-color: #0003;
+}
+.submit{
+    background-color: #000;
+    color: #fff;
+    width: 220px;
+    font-size: 14px;
+}
+.submit:hover{
+    background-color: #000;
+    color: #f00;
+    font-weight: bold;
+}
+@media (max-width: 1000px){ /* valor afegit (menu comprimit) */
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 200px;
+        height: 1184px;
+        background: #000;
+        top: 80px;
+        right: -100%;
+        text-align: end;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    nav ul li .a{
+        font-size: 20px;
+        padding: 7px 0;
+        margin-right: 30px;
+    }
+    li a:hover{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        right:0;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        top: 240px;
+        right: 0;
+        width: auto;
+        height: auto;
+        padding: 100px 20px 20px 20px;
+        z-index: 1000;
+    }
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 230px;
+        max-width: 500px;
+        position: relative;
+    }
+    .modal:target {
+        display: flex;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------- Contingut ---------------------------------------------------------------------------------------------------------*/
+img{
+    object-fit: cover;
+}
+.imgs{
+    width: 100%;
+    height: 400px;
+}
+section{
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@media (max-width: 1250px){
+    section{
+        width: 80%;
+    }
+}
+p{
+    text-align: justify;
+}
+h2{
+    font-size: 30px;
+}
+.titulo-img{
+    width: 90%;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 120px;
+    color: #fff; 
+}
+@media (max-width: 525px){
+    .a-1{
+        font-size: 90px;
+        height: 300px;
+    }
+}
+@media (max-width: 840px){
+    .a-2{
+        font-size: 90px;
+        height: 300px;
+        top: 320px;
+    }
+}
+@media (max-width: 610px){
+    .a-2{
+        font-size: 70px;
+        height: 250px;
+        top: 280px;
+    }
+}
+@media (max-width: 635px){
+    .a-3{
+        font-size: 90px;
+        height: 300px;
+        top: 320px;
+    }
+}
+.hotels-nav{
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    width: 160px;
+
+}
+.hotels{
+    color: #fff;
+    margin: 5px;
+    font-size: 18px;
+}
+a:hover{
+    color: #f00;
+}
+hr{
+    visibility: hidden;
+    padding-top: 10px;
+}
+.hotels-content-left{
+    margin-left: 200px;
+}
+.hotels-content{
+    width: 50%;
+    padding: 20px 20px 15px 20px;
+    background-color: #0001;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hotels-content:hover{
+    background-color: #0003;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 24px;
+    margin-top: 5px;
+}
+.article-img{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    width: 250px;
+}
+.img-hotels{
+    border-radius: 3px;
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+textarea{
+    background-color: #0001;
+    padding: 10px;
+    font-size: 16px;
+    min-width: 960px;
+    max-width: 960px;
+    border: 0;
+    border-radius: 5px;
+    min-height: 50px;
+}
+textarea:hover{
+    background-color: #0003;
+}
+.textarea{
+    min-width: 980px;
+    max-width: 980px;
+}
+#hotel3, #hotel6, #hotel9{
+    margin-right: 0;
+}
+.a-l{
+    margin-left: 0;
+}
+.submit-hotel{
+    margin: 0;
+    margin-top: 10px;
+}
+.activity-content{
+    padding: 20px;
+    background-color: #0001;
+    border-radius: 5px;
+}
+.activity-content:hover{
+    background-color: #0003;
+}
+.a2-content{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.a3{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.act{
+    width: 100%;
+}
+.img-activity{
+    width: 200px;
+}
+.apartado{
+    margin-right: 5px;
+    font-weight: bold;
+}
+.form{
+    width: 100%;
+}
+.mapa{
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 400px;
+}
+fieldset{
+    padding: 10px;
+    border: 0;
+    background-color: #0001;
+    border-radius: 5px;
+}
+.form-input{
+    margin: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 300.9px;
+}
+.form-input-2{
+    margin: 0;
+    margin-top: 5px;
+    width: 465px;
+}
+.div-form{
+    margin-left: 10px;
+}
+.form-input-email{
+    margin: 0;
+    margin-top: 5px;
+    width: 960px;
+}
+.input-final{
+    margin-right: 0;
+}
+h5{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.radio-r{
+    width: 15px;
+    margin-right: 10px;
+}
+.img-reserva{
+    width: 100px;
+    height: 100px;
+}
+.alo-reserva{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    background-color: #0001;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.alo-reserva:hover{
+    background-color: #0003;
+}
+.alo-final{
+    margin-bottom: 0;
+}
+.res-content{
+    margin-left: 10px;
+    margin-top: 35px;
+}
+.reset{
+    margin-left: 5px;
+}
+
+/*--------------------------------------------------------------------------------------------------------- Footer final ---------------------------------------------------------------------------------------------------------*/
+footer{
+    padding: 5px 0 55px 10%;
+    background-color: #bbb;
+}
+#final{
+    color: #000;
+    margin-top: 15px;
+    float: left;
+}
+#colegio{ 
+    margin-top: 15px;
+    margin-right: 10%;
+    float: right;
+    height: 20px;
+}

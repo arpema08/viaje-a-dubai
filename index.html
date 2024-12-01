@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Viatge a Dubai</title>
+    <meta name="author" content="Arnau Pérez">
+    <meta name="keyword" content="dubai, viatge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-page"> <!-- Valor afegit al CSS (apartat menu navegació) -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="./index.html" class="enlace">
+            <h1 class="titulo">VIATGE A DUBAI</h1>
+        </a>
+        <ul>
+            <li class="li"><a class="active a" href="./index.html">Inici</a></li>
+            <li class="li"><a class="a" href="./content1.html">Allotjament</a></li>
+            <li class="li"><a class="a" href="./content2.html">Activitats</a></li>
+            <li class="li"><a class="a" href="./contact.html">Contacte</a></li>
+            <li class="li"><a class="a" href="./formulari.html">Reservar</a></li>
+            <li class="li"><a class="open-modal-button a" href="#login">Accedir</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <form action="#close">
+                <input type="text" placeholder="Usuari" required><br>
+                <input type="password" placeholder="Contrasenya" maxlength="8" required><br>
+                <a href="#"><input type="submit" value="Entrar" class="submit"></a>
+            </form>
+        </div>
+    </div>
+
+    <div class="vacio-superior"></div>
+
+    <div class="t">
+        <img class="a-1 imgs" src="./imatges/dubai_background.avif" alt="Imatge Dubai">
+        <h2 class="titulo-img a-1">VIATGE A DUBAI</h2>
+    </div>
+
+    <section>
+        <h3>Descobreix Dubai: Una ciutat on lo impossible es fa realitat</h3>
+        <article>
+            <br>
+            <p>Benvingut a Dubai, una metròpoli fascinant que s'alça majestuosa al cor del desert i representa el perfecte equilibri entre tradició i modernitat. Aquest vibrant destí, un dels més emblemàtics dels Emirats Àrabs Units, és conegut per trencar barreres, desafiar els límits de la imaginació i oferir experiències que no trobaràs a cap altre lloc del món.
+            <br><br>
+            Dubai no és només un lloc, és una experiència. Aquí, el luxe i la innovació es combinen per crear un estil de vida incomparable. i els moderns centres comercials que allotgen des de botigues exclusives fins a pistes d'esquí cobertes, cada racó de la ciutat està dissenyat per sorprendre'l. Dubai no oblida les seves arrels: als tradicionals socs pots explorar una rica herència cultural, plena d'aromes d'espècies, joies enlluernadores i artesanies úniques.
+            <br><br>
+            A més a més, Dubai és un paradís per als amants de l'aventura i la natura. mentre gaudiu d'una hospitalitat que farà que us sentiu com a casa.
+            <br><br>
+            Dubai no és només una destinació turística; és un lloc on els somnis més ambiciosos prenen vida, un punt de trobada per a cultures de tot el món i una finestra al futur. Ja sigui que busques luxe, entreteniment, cultura o aventura, Dubai té alguna cosa especial reservada per a tu.
+            <br><br>
+            Prepara't per explorar una ciutat que redefineixi els límits del possible i transforma cada moment en una experiència inoblidable. Estàs preparat per descobrir l'encant de Dubai?</p>
+        </article>
+    </section>
+    
+    <footer>
+        <a href="./contact.html"><p id="final">Arnau Pérez Marfil - SMX 1A</p></a>
+        <img id="colegio" src="./imatges/LogoInstitut.png" alt="Logo Institut Sabadell">
+    </footer>
+</body>
+</html>
